@@ -51,8 +51,8 @@ nav {
     margin-top: 0%;
 }
 
-h1 {
-    font-size: 2.5em;
+.d1 h1 {
+    font-size: 3.5em;
     margin: 20px 0;
     text-align: center;
 }
@@ -67,14 +67,16 @@ h1 {
 
 .info {
     display: flex;
-    align-items: center; /* Aligns items vertically in the center */
+    align-items: flex-start;   /* Align items at the start */
+    margin-top: 20px; /* Aligns items vertically in the center */
     color: aqua;
 }
 
-h2 {
+.info h2 {
     margin: 0; /* Remove default margin */
-    font-size: 1.5em; /* Adjust font size as needed */
+    font-size: 2em; /* Adjust font size as needed */
     padding-left: 5%;
+    color: red;
 }
 p
 {
@@ -85,13 +87,22 @@ p
 
 #main1
 {
-    margin: 0;
     background-color: #282c34;
+    /* max-width: 800px; Limit the width of the main content */
+    margin: 0 auto;   /* Center the main container */
+    padding: 20px;    /* Add some padding */
+}
+
+.info p
+{
+    margin-top: 10px; 
+    margin-left: 30px;
+    color: aqua
 }
 
 #main2
 {
-    margin-top: 01%;
+    margin: auto;
     background-color: #282c34;
     display: flex;
 }
