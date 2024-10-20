@@ -2,21 +2,38 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #222020;
-    color:white;
+    background-color: black;
+    color: white;
+    
 }
+
+#myVideo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+    transform: translate(-50%, -50%);
+    filter: brightness(0.5); /* Adjust the value between 0 (black) and 1 (original brightness) */
+        z-index: -100; /*Make transperancy*/
+}
+
 
 header {
     display: flex;
-    justify-content: space-between; /* Distributes space between children */
-    align-items: center; /* Vertically centers items */
-    background-color: #282c34;
+    justify-content: space-between;
+    /* Distributes space between children */
+    align-items: center;
+    /* Vertically centers items */
+    /* background-color: #282c34; */
     color: white;
     padding: 0px;
 }
 
 nav {
-    margin-left: auto; /* Pushes nav to the right */
+    margin-left: auto;
+    /* Pushes nav to the right */
 }
 
 .nevbar1 {
@@ -39,7 +56,7 @@ nav {
 }
 
 .nevbar1 a:hover {
-    background-color: #575757;
+    /* background-color: #575757; */
     border-radius: 5px;
     text-decoration: underline;
     /* text-decoration-color:white;
@@ -47,62 +64,180 @@ nav {
 }
 
 #logo {
-    max-width: 80px; /* Adjust the logo size */
+    max-width: 80px;
+    /* Adjust the logo size */
     margin-top: 0%;
 }
 
-.d1 h1 {
-    font-size: 3.5em;
-    margin: 20px 0;
+.d1 {
     text-align: center;
+    margin: 240px 0;
 }
 
-#img1 {
-    max-width: 250px; /* Adjust the logo size */
-    height: auto;
-    margin-left: 05%;
-    filter: brightness(0.9);
-    /* margin-right: 05px; */
+.h3-1 {
+    font-size: 24px;
+    font-weight: normal;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
 }
 
-.info {
+.h2-1 {
+    font-size: 40px;
+    font-weight: bold;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.d2 {
     display: flex;
-    align-items: flex-start;   /* Align items at the start */
-    margin-top: 20px; /* Aligns items vertically in the center */
+    text-align: left;
+    /* padding: 20px; */
+    /* background: #857a7a; */
+    /* border-radius: 8px; */
+    /* max-width: 800px; */
+    margin-top: 27.5%;
+    /* box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); */
+}
+
+.d2 img {
+    max-width: 100%;
+    border-radius: 8px;
+    margin-left: 5%;
+    margin-right: 20px;
+    /* Space between image and text */
+}
+
+.d2 p {
+    /* margin: 10px 0;  */
+    /* Adjust top and bottom margin as needed */
+    line-height: 1.5;
+    /*flex: 1; */
+    /* Allows the paragraph to take remaining space */
+    /* display: inline-block; */
+    /* Only take up needed space */
+}
+
+.p1 {
+    margin: 10px 0;
+    font-size: 0.7cm;
+    font-weight: bold, initial;
     color: aqua;
 }
 
-.info h2 {
-    margin: 0; /* Remove default margin */
-    font-size: 2em; /* Adjust font size as needed */
-    padding-left: 5%;
-    color: red;
-}
-p
-{
-    margin: 0; /* Remove default margin */
-    font-size: 1.5em; /* Adjust font size as needed */
-    padding-left: 00%;
+.p2 {
+    margin-left: 1%;
+    margin-top: 3%;
+    font-size: 0.5cm;
 }
 
-#main1
-{
-    background-color: #282c34;
-    /* max-width: 800px; Limit the width of the main content */
-    margin: 0 auto;   /* Center the main container */
-    padding: 20px;    /* Add some padding */
+.d3 {
+    margin: 15% 0;
+    text-align: center;
 }
 
-.info p
-{
-    margin-top: 10px; 
-    margin-left: 30px;
-    color: aqua
+.d3 h2 {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 2em; /* Changed from cm to em for better responsiveness */
+    margin: 0 0 10px; /* Added bottom margin for spacing below the heading */
+    
 }
 
-#main2
-{
-    margin: auto;
-    background-color: #282c34;
+.d3 h4 {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 1em; /* Changed from cm to em for better responsiveness */
+    line-height: 1.5; /* Increased line height for better readability */
+    margin: 0; /* Reset margins */
+   
+}
+
+
+/* Container styling */
+.container1 {
     display: flex;
+    /* Use Flexbox to align items */
+    justify-content: space-between;
+    /* Space out items evenly */
+    flex-wrap: wrap;
+    /* Allow items to wrap on smaller screens */
+    padding: 20px;
+    /* Padding around the container */
+    /* background: black; */
+    /* Background color of the container */
+    border-radius: 8px;
+    /* Rounded corners */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    /* Subtle shadow */
+    margin: 0 auto;
+    /* Center the container */
+}
+
+/* Paragraph styling */
+.p3,
+.p4,
+.p5 {
+    margin-top: 5%;
+    /* Top margin for spacing */
+    color: white;
+    /* Text color for better contrast */
+    font-size: 1.1em;
+    /* Slightly larger font size */
+}
+
+/* Individual item styling */
+.d4,
+.d5,
+.d6 {
+    text-align: center;
+    /* Center-align text */
+    flex: 1;
+    /* Allow items to grow equally */
+    margin: 10px;
+    /* Space between items */
+    min-width: 200px;
+    /* Minimum width for responsiveness */
+}
+
+/* Image styling */
+.d4 img,
+.d5 img,
+.d6 img {
+    max-width: 20%;
+    /* Adjusted size for better visibility */
+    height: auto;
+    /* Maintain aspect ratio */
+    margin-bottom: 10px;
+    /* Space between image and text */
+}
+
+/* Container for icons */
+.d7 {
+    margin-top: 30%;
+    margin-bottom: 5%;
+    display: flex; /* Use Flexbox for layout */
+    justify-content: center; /* Center the icons horizontally */
+    align-items: center; /* Center the icons vertically */
+    gap: 20px; /* Space between icons */
+    padding: 20px; /* Padding around the container */
+}
+
+/* Icon images */
+.d7 img {
+    max-width: 50px; /* Set a maximum width for the icons */
+    height: auto; /* Maintain aspect ratio */
+    transition: transform 0.3s; /* Smooth scale effect on hover */
+}
+
+/* Hover effect for icons */
+.d7 img:hover {
+    transform: scale(1.1); /* Slightly enlarge the icon on hover */
+}
+
+/* Contact text styling */
+.d8 {
+    text-align: center; /* Center align the text */
+    margin-top: 20px; /* Space above the text */
+}
+
+.d8 p {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; /* Font family */
+    font-size: 2em; /* Font size */
 }
