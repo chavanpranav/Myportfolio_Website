@@ -232,12 +232,12 @@ nav {
 }
 
 /* Contact text styling */
-.d8 {
+#d8 {
     text-align: center; /* Center align the text */
     margin-top: 20px; /* Space above the text */
 }
 
-.d8 p {
+#d8 p {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; /* Font family */
     font-size: 2em; /* Font size */
 }
